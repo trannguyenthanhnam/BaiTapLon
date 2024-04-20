@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="../ima/icon.jpg">
+<link type="text/css" href="../css/dangki.css" rel="stylesheet">
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/dangki.js"></script>
+<meta charset="utf-8">
+<title></title>
+</head>
+
+<body bgcolor="#EFF0F5">
+<div id="wrap">
+<div id="header"> <img src="../ima/icon.jpg" class="img1"> <br>
+  <h2 class="h2">Kiến thức - Kinh nghiệm - Hỏi đáp</h2>
+  
+  <form>
+    <input type="text" name="search" placeholder="Tìm bài viết, sản phẩm...">
+  </form>
+</div>
+<div id="menu">
+  <ul>
+     <h3>
+      <li> <a href="index.html" id="a1"> Trang chủ</a></li>
+      <li> <a href="ict.html" id="a1"> Tin Hot </a> </li>
+      <li> <a href="kinhte.html" id="a1"> Kinh tế </a> </li>
+      <li> <a href="giaitri.html" id="a1"> Giải trí </a> </li>
+      <li> <a href="thoisu.html" id="a1"> Thời sự </a> </li>
+      <li> <a href="giaoduc.html" id="a1"> Giáo dục </a> </li>
+      </h3>
+  </ul>
+</div>
+<br>
+<div id="contend"> <br>
+<div class="divtk"><strong>TẠO TÀI KHOẢN WEBSITE </strong></div>
+<div class="divtk2">Bạn đã là thành viên ? <a href="dangnhap.html">Đăng nhập</a> ngay.</div>
+<br>
+<br>
+  <div id="contend1">
+    
+     <h2 align="center">ĐĂNG KÝ TÀI KHOẢN</h2>
+    <form action="dangnhap.html" onsubmit="return KiemTra();" method="post">
+      <div>
+        <label for="txtDN" class="title">Tên đăng nhập:</label> <br>
+        <input type="text" id="txtDN" onblur="KiemTraTenDN();" name="txtDN" size="30" placeholder="Tên đăng nhập">
+        <span id="tendn" class="error"></span>
+    </div> 
+    <div>
+        <label for="txtMK" class="title">Mật khẩu:</label> <br>
+        <input type="password" id="txtMK" onblur="KiemTraMK();" name="txtMK" size="30" placeholder="Mật khẩu">
+        <span id="mk" class="error"></span>
+    </div> 
+    <div>
+        <label for="txtXNMK" class="title">Xác nhận mật khẩu:</label> <br>
+        <input type="password" id="txtXNMK" onblur="KiemTraXNMK();" name="txtXNMK" size="30" placeholder="Xác nhận mật khẩu">
+        <span id="xnmk" class="error"></span>
+    </div> 
+    <h1 align="center">THÔNG TIN CÁ NHÂN</h1>
+    <div>
+        <label for="txtName" class="title">Họ và tên:</label> <br>
+        <input type="text" id="txtName" name="txtName" size="30" placeholder="Họ và tên">
+        <span id="hoten" class="error">Bắt buộc</span>
+    </div> 
+    <div>
+        <label for="txtNS" class="title">Ngày sinh:</label> <br>
+        <input type="date" id="txtNS" onblur="KiemTraDate()" name="txtNS"name="txtNS" size="30">
+        <span id="ngaysinh" class="error"></span>
+    </div> 
+    <div>
+        <label for="txtDC" class="title">Địa chỉ:</label> <br>
+        <input type="text" name="txtDC" id="txtDC" size="30" placeholder="Địa chỉ">
+        <span id="diachi" class="error"></span>
+    </div>
+    <div>
+        <label for="txtDT" class="title">Số điện thoại:</label> <br>
+        <input type="text" name="txtDT" id="txtDT" size="30" placeholder="Số điện thoại">
+        <span id="dienthoai" class="error"></span>
+    </div>
+    <div>
+        <label for="txtEmail" class="title">Email:</label> <br>
+        <input type="text" name="txtEmail" id="txtEmail" size="30" onblur="KiemTraEmail()" placeholder="Email">
+        <span id="email" class="error"></span>
+    </div>
+        <input type="submit" name="btnDangKy" id="btnDangKy" value="Đăng ký" />
+     <br>Hoặc đăng kí với :<br>
+    <input type="reset" name="o" id="o" value="Đăng kí bằng Gmail" />
+    </form>
+  <img src="../ima/fb.png" width="150" height="41">
+  <img src="../ima/gg.png" width="150" height="40">
+ 
+  </div>
+  <div id="contend2"> 
+  <img src="../ima/icon.jpg" width="250" height="250"> 
+  <BR>
+  
+  </div>
+</div>
+<div id="footer">
+  <div class="divft1">
+    <p>&nbsp;</p>
+    <p><a href="index.html"> TRANG CHỦ</a></p>
+  </div>
+  <div class="divft">
+    <a href="#">Khoa học</a> <br>
+    <a href="#">Thời sự</a> <br>
+    <a href="#">Dân sự</a> <br>
+    <a href="#">Kinh tế</a> <br>
+    <a href="#">Giải trí</a> </div>
+  <div class="divft">
+    <a href="#">Thể thao</a> <br>
+    <a href="#">Pháp luật</a> <br>
+    <a href="#">Giáo dục</a> <br>
+    <a href="#">Sức khoẻ</a> </div>
+  <div class="divft">
+    <a href="#">Du lịch</a> <br>
+    <a href="#">Số hoá</a> <br>
+    <a href="#">Xe</a> </div>
+  <div class="divft">
+    <h4>VỀ CHÚNG TÔI</h4>
+    <a href="#"> Facebook</a> <br>
+    <a href="#"> Youtube</a> <br>
+    <a href="#"> Google</a> <br>
+    <a href="#"> Skype</a> </div>
+  <div class="divft2"> <br>
+    <hr>
+    <br>
+    <h4> Trần Nguyễn Thanh Nam_20110651</h4>
+  </div>
+</div>
+</body>
+</html>
